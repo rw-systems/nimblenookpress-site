@@ -7,11 +7,11 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.inner}`}>
         <div className={styles.brand}>
-          <img
-            src="/nimblenookpress-logo.png"
-            alt="Nimble Nook Press"
-            className={styles.logo}
-          />
+          <div className={styles.wordmark}>
+            <span className={styles.wordmarkNimble}>Nimble</span>
+            <span className={styles.wordmarkNook}> Nook</span>
+            <span className={styles.wordmarkPress}> Press</span>
+          </div>
           <p className={styles.tagline}>
             Stories that spark a love of reading.
           </p>
