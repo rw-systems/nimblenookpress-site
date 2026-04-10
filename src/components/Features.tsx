@@ -62,7 +62,8 @@ export default function Features() {
           <h2 className={styles.title}>
             Books children
             <span style={{ color: 'var(--nnp-blue)' }}> love</span>, parents
-            <span style={{ color: 'var(--nnp-orange)' }}> trust</span>
+            <span style={{ color: 'var(--nnp-orange)' }}> trust</span>, teachers
+            <span style={{ color: 'var(--nnp-green)' }}> recommend</span>
           </h2>
           <p className={styles.subtitle}>
             At Nimble Nook Press, we believe the right book at the right moment can change a child's life. Every title we publish is chosen with that belief in mind.
