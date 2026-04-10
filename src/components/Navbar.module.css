@@ -23,13 +23,20 @@
 .logo {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
-.logoImg {
-  height: 190px;
-  width: auto;
-  mix-blend-mode: multiply;
+.wordmark {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 1.9rem;
+  line-height: 1;
+  letter-spacing: -0.01em;
 }
+
+.wordmarkNimble { color: var(--nnp-orange); }
+.wordmarkNook   { color: var(--nnp-blue); }
+.wordmarkPress  { color: var(--nnp-dark); font-size: 1.2rem; font-weight: 700; opacity: 0.5; }
 
 .nav {
   display: flex;
@@ -55,8 +62,7 @@
   .navLink {
     display: none;
   }
-  .logoImg {
-    height: 120px;
-    mix-blend-mode: multiply;
+  .wordmark {
+    font-size: 1.5rem;
   }
 }

@@ -14,11 +14,11 @@ export default function Navbar() {
     <header className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.inner}`}>
         <a href="/" className={styles.logo}>
-          <img
-            src="/nimblenookpress-logo.png"
-            alt="Nimble Nook Press"
-            className={styles.logoImg}
-          />
+          <span className={styles.wordmark}>
+            <span className={styles.wordmarkNimble}>Nimble</span>
+            <span className={styles.wordmarkNook}> Nook</span>
+            <span className={styles.wordmarkPress}> Press</span>
+          </span>
         </a>
         <nav className={styles.nav}>
           <a href="#books" className={styles.navLink}>Our Books</a>
