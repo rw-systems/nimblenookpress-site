@@ -1,0 +1,62 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 16px 0;
+  transition: background 0.2s ease, box-shadow 0.2s ease, padding 0.2s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(253, 250, 246, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 var(--nnp-border);
+  padding: 10px 0;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  height: 52px;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navLink {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--nnp-dark);
+  opacity: 0.8;
+  transition: opacity 0.15s ease, color 0.15s ease;
+}
+
+.navLink:hover {
+  opacity: 1;
+  color: var(--nnp-blue);
+}
+
+@media (max-width: 640px) {
+  .navLink {
+    display: none;
+  }
+  .logoImg {
+    height: 42px;
+  }
+}
