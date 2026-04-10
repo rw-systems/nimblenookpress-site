@@ -13,22 +13,20 @@ export default function Footer() {
             className={styles.logo}
           />
           <p className={styles.tagline}>
-            Where every story finds its reader.
+            Stories that spark a love of reading.
           </p>
         </div>
 
         <nav className={styles.links}>
           <div className={styles.linkGroup}>
-            <span className={styles.groupLabel}>Product</span>
-            <a href="https://app.nimblenookpress.com" target="_blank" rel="noopener noreferrer">
-              StoryForge App
-            </a>
-            <a href="#features">Features</a>
-            <a href="#how-it-works">How It Works</a>
+            <span className={styles.groupLabel}>Explore</span>
+            <a href="#books">Our Books</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
           </div>
           <div className={styles.linkGroup}>
-            <span className={styles.groupLabel}>Company</span>
-            <a href="mailto:hello@nimblenookpress.com">Contact</a>
+            <span className={styles.groupLabel}>Connect</span>
+            <a href="mailto:hello@nimblenookpress.com">hello@nimblenookpress.com</a>
             <a href="https://www.nimblenookpress.com">nimblenookpress.com</a>
           </div>
         </nav>

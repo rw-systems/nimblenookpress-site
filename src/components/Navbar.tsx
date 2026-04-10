@@ -21,16 +21,9 @@ export default function Navbar() {
           />
         </a>
         <nav className={styles.nav}>
-          <a href="#features" className={styles.navLink}>Features</a>
-          <a href="#how-it-works" className={styles.navLink}>How It Works</a>
-          <a
-            href="https://app.nimblenookpress.com"
-            className="btn btn-primary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Open StoryForge
-          </a>
+          <a href="#books" className={styles.navLink}>Our Books</a>
+          <a href="#about" className={styles.navLink}>About</a>
+          <a href="#contact" className={styles.navLink}>Contact</a>
         </nav>
       </div>
     </header>

@@ -6,33 +6,28 @@ export default function Hero() {
       <div className={`container ${styles.inner}`}>
         <div className={styles.content}>
           <div className={styles.badge}>
-            <span>✨</span> AI-Powered Children's Publishing
+            <span>📚</span> Children's Book Publisher
           </div>
           <h1 className={styles.headline}>
-            Where every story
-            <span className={styles.accentOrange}> finds</span> its
-            <span className={styles.accentBlue}> reader</span>
+            Stories that
+            <span className={styles.accentOrange}> spark</span> a
+            <span className={styles.accentBlue}> love of reading</span>
           </h1>
           <p className={styles.subhead}>
-            Nimble Nook Press creates beautifully crafted children's books — fast, thoughtfully, and with heart. Our StoryForge platform brings AI-assisted storytelling to life, from first draft to finished page.
+            Nimble Nook Press publishes beautifully crafted children's books that ignite curiosity, celebrate imagination, and stay with young readers long after the last page.
           </p>
           <div className={styles.actions}>
-            <a
-              href="https://app.nimblenookpress.com"
-              className="btn btn-primary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span>Open StoryForge</span>
+            <a href="#books" className="btn btn-primary">
+              <span>Explore Our Books</span>
               <ArrowRight />
             </a>
-            <a href="#how-it-works" className="btn btn-secondary">
-              See how it works
+            <a href="#about" className="btn btn-secondary">
+              About Us
             </a>
           </div>
           <div className={styles.socialProof}>
             <div className={styles.avatars}>
-              {['🐦', '📚', '✏️'].map((emoji, i) => (
+              {['🐦', '📖', '⭐'].map((emoji, i) => (
                 <div key={i} className={styles.avatar}>{emoji}</div>
               ))}
             </div>
@@ -45,18 +40,21 @@ export default function Hero() {
               color="var(--nnp-orange)"
               title="The Moonlit Meadow"
               emoji="🌙"
+              age="Ages 4-8"
               delay="0s"
             />
             <BookCard
               color="var(--nnp-blue)"
               title="Captain Curious"
               emoji="🚀"
+              age="Ages 5-9"
               delay="0.15s"
             />
             <BookCard
               color="var(--nnp-green)"
               title="The Whispering Woods"
               emoji="🌳"
+              age="Ages 6-10"
               delay="0.3s"
             />
           </div>
@@ -67,7 +65,7 @@ export default function Hero() {
   )
 }
 
-function BookCard({ color, title, emoji, delay }: { color: string; title: string; emoji: string; delay: string }) {
+function BookCard({ color, title, emoji, age, delay }: { color: string; title: string; emoji: string; age: string; delay: string }) {
   return (
     <div className={styles.bookCard} style={{ '--card-color': color, '--card-delay': delay } as React.CSSProperties}>
       <div className={styles.bookCover}>
@@ -75,7 +73,7 @@ function BookCard({ color, title, emoji, delay }: { color: string; title: string
       </div>
       <div className={styles.bookMeta}>
         <span className={styles.bookTitle}>{title}</span>
-        <span className={styles.bookTag}>Children's</span>
+        <span className={styles.bookTag}>{age}</span>
       </div>
     </div>
   )

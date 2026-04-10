@@ -1,89 +1,86 @@
 import styles from './HowItWorks.module.css'
 
-const steps = [
+const values = [
   {
     number: '01',
     color: 'var(--nnp-orange)',
     bg: 'rgba(245,128,30,0.08)',
-    title: 'Start with an idea',
+    title: 'Story first, always',
     description:
-      'Describe your story concept — a brave rabbit, a curious astronaut, a magical forest. StoryForge builds out the world.',
+      'Every decision we make - from concept to cover - starts with the story. If it doesn\'t serve the narrative, it doesn\'t belong.',
   },
   {
     number: '02',
     color: 'var(--nnp-blue)',
     bg: 'rgba(27,159,216,0.08)',
-    title: 'Shape the scenes',
+    title: 'Respect for young readers',
     description:
-      'Plan your scenes, develop characters, and refine the narrative arc with AI guidance at every step.',
+      'Children are perceptive, curious, and emotionally intelligent. We write for them honestly - no talking down, no loose ends brushed aside.',
   },
   {
     number: '03',
     color: 'var(--nnp-green)',
     bg: 'rgba(45,158,43,0.08)',
-    title: 'Polish the draft',
+    title: 'Quality without compromise',
     description:
-      'Run QA passes, tweak language for your target age group, and add visual reference prompts for illustrators.',
+      'Every book goes through rigorous editorial and design review. We\'d rather publish fewer books and publish them well.',
   },
   {
     number: '04',
     color: 'var(--nnp-yellow)',
     bg: 'rgba(245,193,0,0.1)',
-    title: 'Publish your book',
+    title: 'Reach that matters',
     description:
-      'Export to EPUB or print-ready formats. Translate into multiple languages. Ship with confidence.',
+      'We publish multilingual editions and work to make our titles accessible to families across cultures, languages, and backgrounds.',
   },
 ]
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className={styles.section}>
+    <section id="about" className={styles.section}>
       <div className="container">
         <div className={styles.header}>
           <span className="section-label" style={{ background: 'rgba(45,158,43,0.1)', color: 'var(--nnp-green)' }}>
-            How It Works
+            About Us
           </span>
           <h2 className={styles.title}>
-            From spark to{' '}
-            <span style={{ color: 'var(--nnp-orange)' }}>shelf</span>{' '}
-            in four steps
+            A small press with a
+            <span style={{ color: 'var(--nnp-orange)' }}> big</span> mission
           </h2>
           <p className={styles.subtitle}>
-            StoryForge guides you through the entire publishing journey — no experience required.
+            Nimble Nook Press was founded on a simple idea: that well-made children's books are one of the most powerful things you can put in a child's hands. These are the values we bring to every title.
           </p>
         </div>
 
         <div className={styles.steps}>
-          {steps.map((step, i) => (
-            <div key={step.number} className={styles.step}>
+          {values.map((v, i) => (
+            <div key={v.number} className={styles.step}>
               <div className={styles.stepLeft}>
-                <div className={styles.stepNumber} style={{ color: step.color, background: step.bg }}>
-                  {step.number}
+                <div className={styles.stepNumber} style={{ color: v.color, background: v.bg }}>
+                  {v.number}
                 </div>
-                {i < steps.length - 1 && <div className={styles.connector} />}
+                {i < values.length - 1 && <div className={styles.connector} />}
               </div>
               <div className={styles.stepContent}>
-                <h3 className={styles.stepTitle}>{step.title}</h3>
-                <p className={styles.stepDesc}>{step.description}</p>
+                <h3 className={styles.stepTitle}>{v.title}</h3>
+                <p className={styles.stepDesc}>{v.description}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <div className={styles.cta}>
+        <div id="contact" className={styles.cta}>
           <div className={styles.ctaCard}>
             <div className={styles.ctaEmoji}>🐦</div>
-            <h3 className={styles.ctaTitle}>Ready to tell your story?</h3>
+            <h3 className={styles.ctaTitle}>Get in touch</h3>
             <p className={styles.ctaDesc}>
-              Join Nimble Nook Press and start creating children's books that spark imagination.
+              Interested in our books, licensing, or working with us? We'd love to hear from you.
             </p>
             <a
-              href="https://app.nimblenookpress.com"
+              href="mailto:hello@nimblenookpress.com"
               className="btn btn-primary"
-              target="_blank"
-              rel="noopener noreferrer"
             >
-              Get started with StoryForge →
+              hello@nimblenookpress.com
             </a>
           </div>
         </div>

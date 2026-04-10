@@ -2,69 +2,70 @@ import styles from './Features.module.css'
 
 const features = [
   {
-    icon: '✍️',
+    icon: '🌟',
     color: 'var(--nnp-orange)',
     bg: 'rgba(245,128,30,0.08)',
-    title: 'AI-Assisted Writing',
+    title: 'Stories That Stick',
     description:
-      'StoryForge uses cutting-edge AI to help craft age-appropriate, imaginative stories — while keeping human creativity front and center.',
+      'Every Nimble Nook book is built around characters and moments that stay with children long after the story ends - sparking conversation and repeat reads.',
   },
   {
     icon: '🎨',
     color: 'var(--nnp-blue)',
     bg: 'rgba(27,159,216,0.08)',
-    title: 'Visual Storytelling',
+    title: 'Vibrant Illustrations',
     description:
-      'Match your narrative with stunning illustration prompts and visual references, keeping artwork consistent across every page.',
+      'Our books pair rich, expressive artwork with every story - visual storytelling that draws young readers in and makes the world of each book come alive.',
   },
   {
     icon: '🌍',
     color: 'var(--nnp-green)',
     bg: 'rgba(45,158,43,0.08)',
-    title: 'Multilingual Ready',
+    title: 'Multilingual Editions',
     description:
-      'Publish in multiple languages from day one. StoryForge manages translations and ensures stories resonate across cultures.',
+      'Many of our titles are available in multiple languages, helping families share stories across cultures and giving bilingual children books that reflect their world.',
   },
   {
-    icon: '📦',
+    icon: '🧒',
     color: 'var(--nnp-yellow)',
     bg: 'rgba(245,193,0,0.1)',
-    title: 'Production Pipeline',
+    title: 'Age-Appropriate Craft',
     description:
-      'From outline to EPUB in a guided workflow — scenes, drafts, QA passes, and final export all managed in one place.',
+      'From board books to early chapter books, our stories are written with careful attention to vocabulary, pacing, and themes suited to each age group.',
   },
   {
-    icon: '🔍',
+    icon: '💡',
     color: 'var(--nnp-orange)',
     bg: 'rgba(245,128,30,0.08)',
-    title: 'Quality Assurance',
+    title: 'Curiosity-First Themes',
     description:
-      'Built-in QA checks review readability, age-appropriateness, and consistency before a single page goes to print.',
+      'We publish books that encourage kids to ask questions, explore the world around them, and see themselves as capable, creative thinkers.',
   },
   {
-    icon: '🚀',
+    icon: '❤️',
     color: 'var(--nnp-blue)',
     bg: 'rgba(27,159,216,0.08)',
-    title: 'Fast Iteration',
+    title: 'Made With Heart',
     description:
-      'Revise, reimagine, and refine. StoryForge makes it painless to explore creative directions without losing any of your work.',
+      'Every title we publish reflects a genuine love of children\'s literature - carefully crafted, thoughtfully edited, and produced to the highest quality standards.',
   },
 ]
 
 export default function Features() {
   return (
-    <section id="features" className={styles.section}>
+    <section id="books" className={styles.section}>
       <div className="container">
         <div className={styles.header}>
           <span className="section-label" style={{ background: 'rgba(27,159,216,0.1)', color: 'var(--nnp-blue)' }}>
-            What We Do
+            What We Publish
           </span>
           <h2 className={styles.title}>
-            Publishing reimagined for the{' '}
-            <span style={{ color: 'var(--nnp-blue)' }}>modern storyteller</span>
+            Books children
+            <span style={{ color: 'var(--nnp-blue)' }}> love</span>, parents
+            <span style={{ color: 'var(--nnp-orange)' }}> trust</span>
           </h2>
           <p className={styles.subtitle}>
-            Every tool in StoryForge is purpose-built for children's book creators who want to move fast without cutting corners.
+            At Nimble Nook Press, we believe the right book at the right moment can change a child's life. Every title we publish is chosen with that belief in mind.
           </p>
         </div>
         <div className={styles.grid}>
